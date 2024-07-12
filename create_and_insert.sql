@@ -3,7 +3,7 @@
 -- enum gender type
 create type gender_type as enum ('Laki-Laki', 'Perempuan');
 
--- generate uuid otomatis dengan fungsi gen_random_uuid() dari extension pgcrypto
+-- Mengaktifkan ekstensi pgcrypto
 CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
 --bikin fungsi generate untuk updated_at otomatis
