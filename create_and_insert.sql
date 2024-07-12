@@ -240,3 +240,15 @@ select cust.id, cust.name, acc.balance, at2.id, at2.name
 select *
 	from account
 	join account_type on account.id_account_type = account_type.id;
+
+select *
+	from account
+	right join account_type on account.id_account_type = account_type.id;
+
+select *
+	from customer
+	right join job on customer.id_job = job.id;
+
+select *
+	from customer
+	inner join address on customer.id_address = address.id;
